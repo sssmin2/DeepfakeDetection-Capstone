@@ -1,0 +1,43 @@
+
+</html>
+<div id="spotter-floating">
+  <div id="drag-bar">
+    <span>Spotter</span>
+    <button id="collapse-btn">_</button>
+    <button id="close-btn">×</button>
+  </div>
+
+  <div id="floating-content">
+    <!-- 메뉴 탭 -->
+    <div class="section-menu">
+      <ul class="menu-nav">
+        <li><button class="menu-bt activate" data-tab="opertate-tab"> 🕹️스위치 </button></li>
+        <li><button class="menu-bt" data-tab="result-tab"> 📊리포트 </button></li>
+        <li><button class="menu-bt" data-tab="list-tab"> 🗂️리스트 </button></li>
+      </ul>
+    </div>
+
+    <!-- 내용 탭 -->
+    <div class="section-content">
+      <div class="content-display">
+        <!-- 메인(operate) 탭 -->
+        <div id="opertate-tab" class="tab activate">
+          <button id="start-analysis">🔍 분석 시작</button>
+          <button id="stop-analysis">🛑 분석 종료</button>
+        </div>
+
+        <!-- 결과 탭 -->
+        <div id="result-tab" class="tab">
+          <div id="report-content"></div>
+        </div>
+
+        <!-- 정보 탭 -->
+        <div id="list-tab" class="tab">
+          <h3>🗂️ 최근 분석 영상</h3>
+          <ul id="recent-list"></ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

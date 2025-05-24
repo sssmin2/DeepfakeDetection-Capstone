@@ -1,0 +1,14 @@
+/* 브라우저 기본 여백 제거 */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* 모든 요소에 border-box 적용 (레이아웃 안정화) */
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }

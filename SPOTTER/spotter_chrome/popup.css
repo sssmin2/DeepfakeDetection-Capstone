@@ -1,0 +1,128 @@
+html{
+    text-align : center; /* 자식 요소 가로 가운데 정렬을 위함 */
+}
+
+body {
+    width: 320px;  /* 팝업너비 */
+    height: 380px; /* 팝업높이 */
+    display: flex;
+    margin: 0; /* 설정해둬야 여백 안 생김 */
+    display: inline-block;
+}
+
+ul, li{ list-style: none; }
+
+/* 
+    해결할것들
+    1. 버튼 활성화된 스타일 (눌린 버튼은 좀 더 진하게 유지) 
+*/
+
+
+/* ----------------------------------------------------------------------- */
+
+/* 전체 레이아웃을 감싼다. */
+.main-container{
+    width: 100%; 
+    height: 100%;
+    background-color: #6495ED; /* 임시 배경색 */
+}
+
+/*제목부분. 상단 15% 차지 */
+.section-title{
+    width: 100%;
+    height: 15%;
+    display:flex;
+}
+#title{
+    width: 94%; 
+    height: 100%;
+    font-size: 40px;
+    color:black;
+    font-weight: bold;
+    margin:auto;
+    
+}
+
+/* 메뉴탭 부분 10% 차지 */
+.section-menu{
+    width: 94%;
+    height: 10%;
+    margin:auto; /* 양옆 마진 조절로 가운데정렬*/ 
+}
+
+.menu-nav{
+    display:flex; /* 포함된 요소들을 가로로 배치하도록함!*/
+    justify-content: center; 
+    gap: 8px; /* 버튼 간 간격 추가 (선택사항) */
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:auto; 
+}
+.menu-bt{
+    width: 100%; 
+    height: 100%;
+    background-color:transparent;
+    border:none;
+    padding: 0;
+}
+
+.menu-nav li{
+    width: 25%;
+    height: 100%;
+    background-color: rgb(250, 250, 250);
+    border-radius: 15px;
+}
+.menu-nav li:hover{
+    background-color: rgb(158, 158, 158);
+    transform: scale(1.05);
+}
+
+.menu-bt img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+
+/* 내용 표시 부분. 75% 차지 */
+.section-content{
+    width: 100%;
+    height:75%;
+    display: flex; /* 부모요소에 적용 후, 자식요소에 margin:auto주면 요소 정중앙 정렬*/
+}
+.content-display{
+    width:94%;
+    height:94%;
+    border-radius: 15px;
+    background-color: rgb(250, 250, 250);
+    margin:auto; /*정렬용*/
+}
+
+.tab{display:none; font-size:20px;}
+.tab.activate{display:block}
+
+/* 로고 이미지 왼쪽 정렬 + 크기 조절 */
+.logo-img {
+    height: 70px;      /* 원하는 크기로 조절 가능 */
+    object-fit: contain;
+    filter: brightness(0) invert(1);  /* 어두운 이미지를 흰색처럼 반전 */
+  }
+  #title {
+    display: flex;
+    justify-content: center; /* 왼쪽 정렬 */
+    align-items: center;
+    padding: 10px 0; /* 왼쪽 여백 조절 */
+  }
+
+.opertate-img {
+    width: 80%;
+    display: block;
+    margin: 2px auto 0 auto;  /* 상단 여백 + 가운데 정렬 */
+}
+
+.info-img {
+    width: 70%;
+    display: block;
+    margin: 0px auto 0 auto;  /* 상단 여백 + 가운데 정렬 */
+}

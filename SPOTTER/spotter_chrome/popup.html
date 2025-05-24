@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+<head>
+    <title>Spotter popup</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<!-- 3개 섹션으로 나뉨. 1.제목 2.메뉴탭 3.내용부-->
+<!-- section은 오로지 레이아웃을 위함이고 그 안에 또 요소 넣음음-->
+<body>
+    <div class="main-container"> <!--전체체 레이아웃을 감싸는 역할-->
+
+        <!-- 제목 부분 -->
+         <div class="section-title">
+            <div id ="title">
+                <img src="images/logo.png" alt="Spotter 로고" class="logo-img" />
+            </div>
+         </div>
+
+         <!------------- 메뉴탭 부분 --------------------------------------->
+         <div class="section-menu">
+            <ul class="menu-nav">
+                <li><button class="menu-bt activate"data-tab="opertate-tab"><img src="images/icon_image/menu_1_switch_blue.png"></button></li>
+                <li><button class="menu-bt" data-tab="information-tab"><img src="images/icon_image/menu_3_information_blue.png"></button></li>
+            </ul>        
+         </div>
+
+          <!------------- 내용 표시 부분 ------------------------------------>
+           <div class="section-content">
+                <div class="content-display" >
+                    <!-- 각각의 메뉴탭을 div로 구성해서 활성탭만 보이도록 설정 -->
+
+                    <!-- 메인(operate) 탭 -->
+                    <div id="opertate-tab" class="tab activate">
+                        <img src="images/operate.png" alt="탐지 시작 이미지" class="opertate-img" />
+                    </div>
+                    
+
+                    <!-- 정보 탭-->
+                    <div id="information-tab" class="tab">
+                        <img src="images/info.png" alt="탐지 시작 이미지" class="info-img" />
+
+                    </div>
+
+                </div>
+    <script src="popup.js"></script>
+</body>
+</html><!-- 끝나는 부분-->

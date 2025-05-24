@@ -1,0 +1,148 @@
+#spotter-floating {
+    position: fixed;
+    width: 280px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 999999;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  #drag-bar {
+    background: #3b82f6;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  #floating-content {
+    padding: 16px;
+  }
+  
+  #collapse-btn,
+  #close-btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #start-analysis {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    background-color: white;
+    color: #3b82f6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  #start-analysis:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  #stop-analysis {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 2px solid #3b82f6;
+    border-radius: 8px;
+    background-color: white;
+    color: #3b82f6;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  
+  #stop-analysis:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+
+  .section-menu ul {
+    list-style-type: none; /* ● 제거 */
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .section-menu li {
+    margin: 0 5px;
+  }
+  
+  .tab {
+    display: none;
+  }
+  
+  .tab.activate {
+    display: block;
+  }
+
+  .menu-bt {
+    background: none;
+    border: none;         /* 테두리 제거 */
+    /* padding: 8px 12px; */
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .menu-bt:hover {
+    background-color: #e7ecff;  /* 연한 파랑 배경 */
+    color: #3b82f6;             /* 짙은 파랑 글씨 */
+    border-radius: 6px;
+  }
+
+  #report-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /*🔹 딥페이크 감지 시 블러 오버레이*/
+#spotter-blur-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#spotter-blur-overlay h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+#spotter-blur-overlay p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+#spotter-blur-overlay button {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
