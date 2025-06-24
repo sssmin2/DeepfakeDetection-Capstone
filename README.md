@@ -92,4 +92,3 @@
 1. Coccomini, D. A., Messina, N., Gennaro, C., & Falchi, F. (2022). *Combining EfficientNet and Vision Transformers for Video Deepfake Detection*. In International Conference on Image Analysis and Processing (pp. 219–229). Springer.
 2. Rossler, A., Cozzolino, D., Verdoliva, L., Riess, C., Thies, J., & Nießner, M. (2019). *FaceForensics++: Learning to detect manipulated facial images*. ICCV.
 3. Li, Y., Yang, X., Sun, P., Qi, H., & Lyu, S. (2020). *Celeb-DF: A Large-scale Challenging Dataset for DeepFake Forensics*. CVPR.
-"""
