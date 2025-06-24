@@ -53,7 +53,7 @@
 | Celeb-DF (v2)    | 590 real + 300 real 추가 + 5639 fake 영상           |
 
 
-- 모든 영상에서 30프레임 간격으로 추출하여 **약 10만 장의 얼굴 이미지 데이터 구성
+- 모든 영상에서 30프레임 간격으로 추출하여 약 10만 장의 얼굴 이미지 데이터 구성
 
 ---
 
@@ -63,6 +63,7 @@
 
 
 <img width="529" alt="image" src="https://github.com/user-attachments/assets/d2c6ca3d-3aa7-4e85-857c-6555f8b15bb3" />
+
 
 
 
