@@ -25,7 +25,7 @@
 
 ### Backend
 
-- **기술 스택**: Python, Flask, PyTorch, NumPy, OpenCV
+- **기술 스택**: Flask, PyTorch, NumPy, OpenCV
 - **핵심 기능**:
   - 이미지 전처리 및 예측 수행 (`predict_model`)
   - EfficientNet + Vision Transformer 기반 탐지 모델 적용
@@ -52,6 +52,7 @@
 | FaceForensics++  | 1000 real + 1000 fake 영상 (YouTube 기반)          |
 | Celeb-DF (v2)    | 590 real + 300 real 추가 + 5639 fake 영상           |
 
+
 - 모든 영상에서 30프레임 간격으로 추출하여 **약 10만 장의 얼굴 이미지 데이터** 구성
 
 ---
@@ -60,6 +61,8 @@
 
 총 3가지 설정으로 실험을 진행하였습니다:
 <img width="529" alt="image" src="https://github.com/user-attachments/assets/d2c6ca3d-3aa7-4e85-857c-6555f8b15bb3" />
+
+
 
 > Fine-tuning이 가장 높은 성능을 보여줌
 
