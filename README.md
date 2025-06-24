@@ -60,6 +60,8 @@
 ## 실험 결과
 
 총 3가지 설정으로 실험을 진행하였습니다:
+
+
 <img width="529" alt="image" src="https://github.com/user-attachments/assets/d2c6ca3d-3aa7-4e85-857c-6555f8b15bb3" />
 
 
